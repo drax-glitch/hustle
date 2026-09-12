@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-ink-950 text-slate-100 font-body antialiased;
+    letter-spacing: -0.01em;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    letter-spacing: -0.02em;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-ink-700/80 rounded-full hover:bg-ink-600;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+/* Editorial panel - restrained, structured, minimal chrome */
+.panel {
+  @apply bg-ink-900/90 border border-ink-800/80 rounded-xl transition-colors;
+}
+
+.panel-interactive {
+  @apply bg-ink-900/90 border border-ink-800/80 rounded-xl hover:border-ink-700 transition-all duration-200;
+}
+
+.progress-track {
+  @apply w-full h-1.5 rounded-full bg-ink-800 overflow-hidden;
+}
+
+.progress-fill {
+  @apply h-full rounded-full transition-all duration-500 ease-out;
+}
+
+/* Clean editorial typography helpers */
+.eyebrow {
+  @apply text-[10px] uppercase font-bold tracking-[0.18em] text-slate-400;
+}
+
+.eyebrow-amber {
+  @apply text-[10px] uppercase font-bold tracking-[0.18em] text-amber-500/90;
+}
+
+.eyebrow-crimson {
+  @apply text-[10px] uppercase font-bold tracking-[0.18em] text-rose-400/90;
+}
+
+@keyframes bounce-in {
+  0% {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-bounce-in {
+  animation: bounce-in 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
