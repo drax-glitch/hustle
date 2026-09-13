@@ -30,8 +30,12 @@ class Config:
     DB_PORT = os.getenv("DB_PORT", "3306")
     DB_NAME = os.getenv("DB_NAME", "life_rpg")
 
-    if os.getenv("DATABASE_URL"):
-        SQLALCHEMY_DATABASE_URI = os.getenv("DATABASE_URL")
+    database_url = os.getenv("DATABASE_URL")
+    if database_url:
+        # Render and Heroku use postgres:// which SQLAlchemy 1.4+ requires to be postgresql://
+        if database_url.startswith("postgres://"):
+            database_url = database_url.replace("postgres://", "postgresql://", 1)
+        SQLALCHEMY_DATABASE_URI = database_url
     elif DB_TYPE == "mysql" and DB_PASSWORD:
         SQLALCHEMY_DATABASE_URI = (
             f"mysql+pymysql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
