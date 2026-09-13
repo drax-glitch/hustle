@@ -13,7 +13,21 @@ def create_app():
 
     db.init_app(app)
     jwt.init_app(app)
-    CORS(app, resources={r"/api/*": {"origins": app.config["FRONTEND_ORIGIN"]}})
+    raw_origins = app.config.get("FRONTEND_ORIGIN", "http://localhost:5173")
+    if isinstance(raw_origins, str):
+        origins = [o.strip() for o in raw_origins.split(",") if o.strip()]
+    elif isinstance(raw_origins, (list, tuple)):
+        origins = list(raw_origins)
+    else:
+        origins = ["http://localhost:5173"]
+
+    CORS(
+        app,
+        resources={r"/api/*": {"origins": origins}},
+        supports_credentials=True,
+        allow_headers=["Content-Type", "Authorization"],
+        methods=["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+    )
 
     register_routes(app)
     run_migrations(app)

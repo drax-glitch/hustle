@@ -1,7 +1,15 @@
 import axios from "axios";
 
+const rawBaseUrl = import.meta.env.VITE_API_URL || "";
+
+const getBaseUrl = () => {
+  if (!rawBaseUrl) return "/api";
+  const trimmed = rawBaseUrl.replace(/\/+$/, "");
+  return trimmed.endsWith("/api") ? trimmed : `${trimmed}/api`;
+};
+
 const api = axios.create({
-  baseURL: "/api",
+  baseURL: getBaseUrl(),
 });
 
 api.interceptors.request.use((config) => {
@@ -12,8 +20,15 @@ api.interceptors.request.use((config) => {
   return config;
 });
 
-export const getErrorMessage = (err, fallback = "Something went wrong") =>
-  err?.response?.data?.error || fallback;
+export const getErrorMessage = (err, fallback = "Unable to connect to HUSTLE servers.") => {
+  if (!err) return fallback;
+  const errorData = err?.response?.data?.error;
+  if (typeof errorData === "string") return errorData;
+  if (errorData && typeof errorData.message === "string") return errorData.message;
+  if (typeof err?.response?.data?.message === "string") return err.response.data.message;
+  if (typeof err?.message === "string" && !err.message.includes("status code")) return err.message;
+  return fallback;
+};
 
 // ---- Auth ----
 export const login = (payload) => api.post("/auth/login", payload).then((r) => r.data);

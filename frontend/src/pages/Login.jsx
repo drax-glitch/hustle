@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useApp } from "../context/AppContext.jsx";
+import { getErrorMessage } from "../api/api";
 
 function HustleMark({ size = 28 }) {
   return (
@@ -39,8 +40,8 @@ export default function Login() {
       }
       navigate("/");
     } catch (err) {
-      const msg = err?.response?.data?.error || "Unable to connect. Please try again.";
-      setError(msg);
+      const msg = getErrorMessage(err, "Unable to connect to HUSTLE servers.");
+      setError(typeof msg === "string" ? msg : "Unable to connect to HUSTLE servers.");
       console.error("[HUSTLE auth error]", err?.response?.status, msg);
     } finally {
       setBusy(false);

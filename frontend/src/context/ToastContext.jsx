@@ -24,7 +24,10 @@ export function ToastProvider({ children }) {
 
   const addToast = useCallback((message, type = "info", duration = 4000) => {
     const id = Date.now() + Math.random();
-    setToasts((prev) => [...prev, { id, message, type }]);
+    const safeMessage = typeof message === "string"
+      ? message
+      : (message?.message || String(message || "An unexpected error occurred."));
+    setToasts((prev) => [...prev, { id, message: safeMessage, type }]);
     if (duration > 0) {
       setTimeout(() => dismiss(id), duration);
     }
