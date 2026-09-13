@@ -1,7 +1,7 @@
 <div align="center">
 
 # ⚔️ HUSTLE ⚔️
-### *Turn Real Life Into Your Game*
+### *Turn Real Life Into Your Game.*
 
 [![React](https://img.shields.io/badge/React-18.3-blue?style=for-the-badge&logo=react)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-5.4-purple?style=for-the-badge&logo=vite)](https://vitejs.dev/)
@@ -10,102 +10,258 @@
 [![Flask](https://img.shields.io/badge/Flask-3.0-000000?style=for-the-badge&logo=flask)](https://flask.palletsprojects.com/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-<br />
+An RPG-powered productivity platform that transforms your goals, habits, and daily tasks into quests, XP, character progression, boss battles, rewards, and an evolving game world.
 
-**HUSTLE** is an RPG-powered productivity and personal growth platform that converts your real-life goals and daily habits into quests, XP, character progression, epic boss fights, and an evolving game world.
+**🎯 Set Goals → 📜 Complete Quests → ⚡ Earn XP → 🐉 Defeat Bosses → 🏆 Level Up**
 
-*Stop checking off boring to-do lists. Turn your life into an adventure.*
+🚀 **[LIVE DEMO](https://hustle-omega-green.vercel.app/)** • 💻 **[SOURCE CODE](https://github.com/drax-glitch/hustle)**
 
 </div>
 
 ---
 
-## 🎮 The Idea
+## 🎮 What is HUSTLE?
 
-Traditional productivity apps tell you what you need to do.
+**HUSTLE** turns productivity into an RPG.
 
-**HUSTLE** asks:
-> **"What if your real life was the game?"**
+Instead of treating your daily responsibilities as boring checklist items, HUSTLE transforms them into an interactive progression system.
 
-Your everyday actions become quests. Complete quests to earn:
+- Your real-world goals become **Quests**.
+- Completing quests earns **XP** and **Gold**.
+- Your progress improves your **Character Attributes**.
+- Major challenges become **Boss Battles**.
+- Long-term progress unlocks **Skills**, **Rewards**, **Achievements**, and **New Areas**.
 
-- ⚡ **XP** (Level up your character)
-- 🪙 **Gold** (Purchase weapons, armor, & potions in the Shop)
-- 📈 **Attributes** (Build Strength, Intelligence, Discipline, Vitality & Agility)
-- 🧠 **Skill Points** (Unlock nodes in the skill tree)
-- 🏆 **Achievements** (Unlock badges for major real-world milestones)
-- 🔥 **Streaks** (Maintain consistency multipliers)
+```text
+🎯 Goal ↓ 📜 Quest ↓ ✅ Complete ↓ ⚡ XP + 🪙 Gold ↓ 📈 Character Progression ↓ 🐉 Boss Damage ↓ 🏆 Rewards ↓ 🌎 New Progression
+```
+
+> **Your real life is the game. Your actions are the gameplay.**
 
 ---
 
-## ⚔️ The Core Gameplay Loop
+## 💡 The Problem
+
+Traditional productivity applications are excellent at tracking tasks, but tracking alone doesn't always create motivation.
+
+Users often experience:
+- 📋 **Repetitive task lists**
+- 😴 **Motivation dropping over time**
+- 🔄 **Difficulty maintaining habits**
+- 📉 **Progress that feels invisible**
+- 🎯 **Long-term goals disconnected from daily actions**
+- 🏆 **Little sense of achievement**
+
+The problem isn't always knowing *what* to do. It's staying motivated to keep doing it.
+
+---
+
+## ⚔️ Our Solution
+
+HUSTLE combines:
+
+$$\text{PRODUCTIVITY} + \text{GAMIFICATION} + \text{RPG PROGRESSION} \longrightarrow \text{HUSTLE}$$
+
+It turns everyday progress into a game loop:
+
+| Real Life | HUSTLE |
+| :--- | :--- |
+| 🎯 **Goal** | Mission |
+| 📋 **Task** | Quest |
+| 🔥 **Habit** | Daily Quest |
+| 📈 **Progress** | XP |
+| 💪 **Fitness** | Strength |
+| 🧠 **Learning** | Intelligence |
+| ⚔️ **Consistency** | Discipline |
+| 😈 **Major Challenge** | Boss |
+| 🏆 **Milestone** | Achievement |
+| 🪙 **Reward** | Gold |
+| 🌎 **Long-Term Growth** | World Progression |
+
+---
+
+## 🕹️ Core Gameplay Loop
+
+The entire experience revolves around:
+
+$$\text{Action} \longrightarrow \text{Reward} \longrightarrow \text{Progression} \longrightarrow \text{Motivation} \longrightarrow \text{Action}$$
 
 ```mermaid
 flowchart TD
-    A[🎯 Real-Life Goal] --> B[📜 Create & Complete Quests]
-    B --> C[⚡ Earn XP, Gold & Attributes]
-    C --> D[⚔️ Deal Damage to Bosses]
-    D --> E[🗺️ Advance Through World Regions]
-    E --> F[🧙 Upgrade Character Stats & Gear]
-    F --> G[🌳 Unlock Skills & Title Upgrades]
-    G --> H[🏆 Become a Stronger Version of Yourself]
+    A[🎯 Real-Life Goal] --> B[📜 Complete Quests]
+    B --> C[⚡ Earn XP & 🪙 Gold]
+    C --> D[⚔️ Deal Damage to Active Boss]
+    D --> E[🧙 Upgrade Attributes & Skill Tree]
+    E --> F[🗺️ Advance World Progression]
+    F --> G[🏆 Unlock Achievements & Real Rewards]
 ```
 
 ---
 
 ## ✨ Key Features
 
-### 📜 Quest System & Habit Tracker
-- Categorize real-world tasks into **Main Quests**, **Side Quests**, and **Daily Habits**.
-- Set difficulty levels (Easy, Medium, Hard, Legendary) with dynamic XP and stat yield.
-- Attributes assigned to quests directly boost corresponding character stats.
+### 📜 Quest System
+Turn everyday responsibilities into RPG quests.
 
-### 🐉 Epic Boss Battles
-- Create custom real-life challenges as **Boss Enemies** (e.g. *"Exam Monster"*, *"Marathon Titan"*).
-- Every completed quest hits the boss with damage derived from your character attributes.
-- Defeat bosses to earn legendary loot, titles, and massive gold rewards.
+#### Quest Types
+- ⚔️ **Main Quests**: Major goals and high-impact objectives.
+- 📜 **Side Quests**: Smaller optional tasks and quick wins.
+- 🔥 **Daily Quests**: Recurring habits and daily routines.
 
-### 🧙 Character Progression & Stat Sheet
-- Level up through XP and distribute attribute points across:
-  - 💪 **Strength**: Fitness & physical endurance
-  - 🧠 **Intelligence**: Learning, reading, & skill mastery
-  - 🔥 **Discipline**: Habit consistency & task completion
-  - 🛡️ **Vitality**: Sleep, recovery, & health
-  - ⚡ **Agility**: Speed & quick wins
-- Equip gear, unlock titles, and inspect your full character sheet.
-
-### 🌳 Skill Trees & Perks
-- Spend skill points earned at level milestones to unlock passive buffs.
-- Enhance XP multipliers, gold find rates, streak protection, and boss critical strikes.
-
-### 🛍️ Item Shop & Armory
-- Spend hard-earned gold on consumables (HP Potions, XP Elixirs) and equipment.
-- Custom real-world rewards store: turn gold into real-life treats (e.g. cheat meals, gaming sessions).
-
-### 🗺️ Evolving World Map & Regions
-- Progress through fantasy zones (e.g., *The Starting Village*, *Iron Citadel*, *Celestial Peaks*).
-- Zone progression reflects real-world consistency and long-term level achievements.
-
-### 📊 Analytics & Habit Tracking
-- Visualize productivity stats, attribute distributions, and weekly quest completion rates powered by **Recharts**.
-
-### 🤖 AI Game Master Integration
-- Optional AI module (OpenAI/Anthropic/Mock engine) to generate immersive narrative questlines and boss lore tailored to your goals.
+#### Quest Difficulty & Rewards
+| Difficulty | Effort | Reward Yield |
+| :--- | :--- | :--- |
+| 🟢 **Easy** | Low | Small XP |
+| 🟡 **Medium** | Moderate | Medium XP |
+| 🔴 **Hard** | High | Large XP |
+| 🟣 **Legendary** | Extreme | Massive XP + Stat Bonus |
 
 ---
 
-## 🛠️ Technology Stack
+### 🐉 Boss Battles
+Major real-world challenges become Boss Battles.
 
-| Domain | Technology | Description |
+**Examples:**
+- 📚 *Exam Monster*
+- 💻 *Coding Titan*
+- 🎯 *Project Overlord*
+- 📖 *Procrastination Demon*
+- 🏃 *Marathon Beast*
+
+Instead of defeating bosses through traditional combat, users defeat them through real-world progress. Every completed quest contributes damage toward the active boss.
+
+```text
+🐉 EXAM MONSTER HP  ████████████░░░░  72%
+⚔️ Quest: Complete 2 chapters  ✓ QUEST COMPLETED
+💥 BOSS DAMAGE  |  ⚡ XP EARNED  |  🪙 GOLD EARNED
+```
+
+---
+
+### 🧙 Character Progression
+Every meaningful action contributes to character development.
+
+#### Character Attributes
+- 💪 **Strength**: Fitness and physical activity
+- 🧠 **Intelligence**: Learning and knowledge
+- ⚔️ **Discipline**: Consistency and task completion
+- 🛡️ **Vitality**: Recovery and healthy routines
+- ⚡ **Agility**: Speed and execution
+
+```text
+QUEST  ↓  XP  ↓  LEVEL UP  ↓  ATTRIBUTE POINTS  ↓  STRONGER CHARACTER  ↓  BIGGER CHALLENGES
+```
+
+---
+
+### 🌳 Skill Tree
+Players can use earned skill points to unlock additional abilities and bonuses.
+
+```text
+               🌳 SKILL TREE
+                     │
+         ┌───────────┴───────────┐
+         │                       │
+    ⚡ XP BOOST             🪙 GOLD FIND
+         │                       │
+    ┌────┴────┐             ┌────┴────┐
+    │         │             │         │
+🔥 STREAK   💥 CRIT     🎁 LOOT     🛡️ SHIELD
+```
+
+**Possible Upgrades:**
+- ⚡ **XP Bonuses**
+- 🪙 **Gold Bonuses**
+- 🔥 **Streak Protection**
+- 💥 **Critical Damage**
+- 🎁 **Loot Bonuses**
+- 📈 **Attribute Improvements**
+
+---
+
+### 🛍️ Shop & Rewards
+Completing quests earns Gold. Gold can be spent in the HUSTLE reward system.
+
+**Reward Categories:**
+- ⚔️ Equipment
+- 🛡️ Armor
+- ❤️ Potions & Consumables
+- ⚡ XP Boosters
+- 🎁 Custom Real-World Rewards (e.g. cheat meal, gaming hour)
+
+```text
+COMPLETE QUEST  ↓  🪙 GOLD  ↓  REWARD  ↓  MOTIVATION  ↓  MORE PROGRESS
+```
+
+---
+
+### 🗺️ Evolving World
+HUSTLE represents long-term growth through an evolving game world.
+
+```text
+🏡 The Starting Village  ↓  🏰 Iron Citadel  ↓  🌲 Whispering Forest  ↓  🔥 Ember Wastelands  ↓  ☁️ Celestial Peaks
+```
+
+The world gives users a visual representation of their journey and progression.
+
+---
+
+### 🔥 Streaks & Consistency
+Consistency is a core part of personal growth. HUSTLE turns repeated actions into streaks that encourage users to maintain momentum.
+
+```text
+DAY 1 🔥  ──>  DAY 2 🔥  ──>  DAY 3 🔥  ──>  DAY 4 🔥  ──>  DAY 5 🔥  ↓  STREAK BONUS
+```
+
+---
+
+### 📊 Analytics
+Interactive visualizations powered by **Recharts** make progress measurable across:
+- 📈 XP progression
+- 📜 Quest completion rates
+- 🔥 Habit streaks
+- 💪 Attribute distribution
+- 🪙 Gold earned
+- 🐉 Boss progress
+- 🏆 Achievements & milestone history
+
+---
+
+### 🤖 AI Game Master
+The AI Game Master adds an immersive narrative layer to productivity.
+
+> **Instead of:** *"Complete your assignment."*  
+> **Game Master:** *"⚔️ QUEST: THE FORBIDDEN MANUSCRIPT — Ancient knowledge lies sealed within the library. Complete your study objective and weaken the Guardian of Procrastination."*
+
+The AI layer supports:
+- 📜 Quest narratives
+- 🐉 Boss lore
+- 🎯 Personalized challenges
+- 🗺️ Story progression
+- 🎭 Immersive descriptions
+
+---
+
+## 🏗️ System Architecture
+
+### 🛠️ Technology Stack
+
+| Layer | Technology | Purpose |
 | :--- | :--- | :--- |
-| **Frontend Framework** | React 18 + Vite 5 | Fast SPA architecture with hot module replacement |
-| **Styling** | Tailwind CSS 3 | Modern dark-mode UI with custom glassmorphism components |
-| **Icons & Charts** | Lucide React + Recharts | Responsive iconography and stat visualizations |
-| **Routing & HTTP** | React Router v6 + Axios | Client-side routing and REST API client |
-| **Backend API** | Python 3.12 + Flask 3.0 | Lightweight RESTful microservice framework |
-| **Database & ORM** | SQLite / PostgreSQL + Flask-SQLAlchemy | Flexible relational schema for user stats and game data |
-| **Authentication** | Flask-JWT-Extended + bcrypt | Secure JWT tokens with password hashing |
-| **Testing** | pytest + pytest-flask | Automated API integration and unit testing |
+| 🎨 **Frontend** | React 18 | Interactive application |
+| ⚡ **Build Tool** | Vite 5 | Fast development and builds |
+| 🎨 **Styling** | Tailwind CSS 3 | Responsive RPG interface |
+| 🧩 **Icons** | Lucide React | UI iconography |
+| 📊 **Charts** | Recharts | Analytics and visualization |
+| 🧭 **Routing** | React Router v6 | Client-side navigation |
+| 🌐 **HTTP** | Axios | API communication |
+| 🐍 **Backend** | Python 3.12 | Server-side logic |
+| 🌶️ **API** | Flask 3 | REST API |
+| 🗄️ **Database** | SQLite / PostgreSQL | Persistent game data |
+| 🧱 **ORM** | Flask-SQLAlchemy | Database abstraction |
+| 🔐 **Authentication** | JWT + bcrypt | Authentication and password hashing |
+| 🧪 **Testing** | pytest + pytest-flask | Backend testing |
+| 🚀 **Deployment** | Vercel / Render | Production hosting |
 
 ---
 
@@ -115,114 +271,156 @@ flowchart TD
 hustle/
 ├── backend/
 │   ├── app/
-│   │   ├── models/          # SQLAlchemy Models (User, Quest, Boss, Character, Skill)
-│   │   ├── routes/          # REST API endpoints (Auth, Quests, Bosses, Character, Shop)
-│   │   ├── services/        # Business logic & AI Game Master engine
-│   │   └── config.py        # Environment configurations
+│   │   ├── models/          # User, Quest, Boss, Character, Skill models
+│   │   ├── routes/          # Auth, Quests, Bosses, Character, Shop routes
+│   │   ├── services/        # Game logic & AI Game Master engine
+│   │   └── config.py        # App configurations
 │   ├── run.py               # Flask entry point
-│   ├── seed.py              # Database seeder (Demo character & default items)
+│   ├── seed.py              # Database seeder (Demo character & items)
 │   ├── seed_skills.py       # Skill tree initializer
-│   └── requirements.txt     # Python dependencies
+│   └── requirements.txt     # Backend dependencies
 │
 └── frontend/
     ├── src/
-    │   ├── api/             # Axios API client modules
-    │   ├── components/      # Reusable UI components (Navbar, QuestCard, StatBar)
-    │   ├── context/         # Auth & Game state React Context
-    │   ├── pages/           # Views (Dashboard, Quests, Bosses, Character, Shop, World)
-    │   ├── App.jsx          # React app routes
-    │   └── main.jsx         # React root entry
-    ├── package.json         # Frontend dependencies & scripts
-    └── vite.config.js       # Vite build & proxy settings
+    │   ├── api/             # Axios API integration
+    │   ├── components/      # RPG UI components
+    │   ├── context/         # Auth & App state providers
+    │   ├── pages/           # Dashboard, Quests, Bosses, Character, Shop, World
+    │   ├── App.jsx          # Router & layout
+    │   └── main.jsx         # App entry point
+    ├── package.json         # Frontend dependencies
+    └── vite.config.js       # Vite configuration
 ```
 
 ---
 
-## 🚀 Quick Start Guide
+## 🔌 API Overview
 
-### Prerequisites
-- **Node.js** v18+ and **npm**
-- **Python** 3.10+
-
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/kingzrag/hustle.git
-cd hustle
-```
-
-### 2️⃣ Backend Setup
-```bash
-cd backend
-
-# Create & activate a virtual environment
-python -m venv venv
-# On Windows:
-venv\Scripts\activate
-# On macOS/Linux:
-# source venv/bin/activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Create .env file (or copy from .env.example)
-cp .env.example .env
-
-# Seed initial database & skill tree
-python seed.py
-python seed_skills.py
-
-# Start Flask backend server (Runs on http://localhost:5002)
-python run.py
-```
-
-### 3️⃣ Frontend Setup
-In a new terminal window:
-```bash
-cd frontend
-
-# Install Node modules
-npm install
-
-# Create .env file (or copy from .env.example)
-cp .env.example .env
-
-# Start Vite dev server (Runs on http://localhost:5173 or 5174)
-npm run dev
-```
+| Endpoint | Method | Description |
+| :--- | :--- | :--- |
+| `/api/auth/login` | `POST` | Authenticate user & issue JWT |
+| `/api/dashboard` | `GET` | Fetch user level, stats, quests, and active boss |
+| `/api/quests` | `GET` / `POST` | Retrieve and create quests |
+| `/api/quests/<id>/complete` | `POST` | Complete quest & receive XP, Gold & Boss Damage |
+| `/api/bosses` | `GET` / `POST` | Manage active boss battles |
+| `/api/character` | `GET` / `PUT` | View and upgrade character attributes |
+| `/api/skills` | `GET` / `POST` | Browse and unlock skill nodes |
+| `/api/shop` | `GET` / `POST` | Browse and purchase items |
 
 ---
 
-## 🔑 Demo Account Credentials
+## 🚀 Live Demo & Local Setup
 
-After running `python seed.py`, log in with the default demo account:
+### 🚀 Live Application
+- **[Launch Live App](https://hustle-omega-green.vercel.app/)**
 
+### 🔑 Demo Account Credentials
+For local and live demo testing:
 - **Username**: `aelindra`
 - **Password**: `password123`
 
 ---
 
-## 🔌 API Endpoint Summary
+### 💻 Run Locally
 
-| Endpoint | Method | Description |
-| :--- | :--- | :--- |
-| `/api/auth/login` | `POST` | Authenticate user & receive JWT token |
-| `/api/dashboard` | `GET` | Fetch overall user level, stats, active quests, and current boss |
-| `/api/quests` | `GET` / `POST` | Fetch all quests or create a new real-life quest |
-| `/api/quests/<id>/complete` | `POST` | Complete quest, receive XP/Gold, and damage active boss |
-| `/api/bosses` | `GET` / `POST` | Manage active boss fights and spawn new bosses |
-| `/api/character` | `GET` / `PUT` | View character attributes and allocate level-up points |
-| `/api/skills` | `GET` / `POST` | View skill tree and purchase skills |
-| `/api/shop` | `GET` / `POST` | View item shop and purchase items |
+#### Prerequisites
+- **Node.js** 18+ & **npm**
+- **Python** 3.10+
+
+#### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/drax-glitch/hustle.git
+cd hustle
+```
+
+#### 2️⃣ Backend Setup
+```bash
+cd backend
+python -m venv venv
+
+# Activate Virtual Environment
+# Windows:
+venv\Scripts\activate
+# macOS/Linux:
+# source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Create environment file
+cp .env.example .env
+
+# Initialize and seed database
+python seed.py
+python seed_skills.py
+
+# Start backend server (Runs on http://localhost:5002)
+python run.py
+```
+
+#### 3️⃣ Frontend Setup
+In a second terminal window:
+```bash
+cd frontend
+
+# Install node dependencies
+npm install
+
+# Create environment file
+cp .env.example .env
+
+# Start dev server (Runs on http://localhost:5173 or 5174)
+npm run dev
+```
 
 ---
 
-## 🤝 Contributing
+## 🏆 Hackathon Highlights
 
-Contributions, issues, and feature requests are welcome!  
-Feel free to check out the [Issues page](https://github.com/kingzrag/hustle/issues).
+- 🎮 **Gamified Productivity**: Transforms conventional task management into an RPG progression system.
+- ⚔️ **Real-World Boss Battles**: Turns large goals into tangible challenges that users progressively defeat.
+- 📈 **Visible Personal Growth**: XP, levels, attributes, skills, and world progression make self-improvement tangible.
+- 🔥 **Consistency Mechanics**: Streaks and recurring quests encourage users to keep showing up daily.
+- 🤖 **AI-Powered Immersion**: The AI Game Master turns ordinary objectives into personalized RPG narratives.
+- 🧩 **Extensible Architecture**: Modular frontend and backend structure designed for multi-platform expansion.
 
 ---
 
-## 📜 License
+## 🔮 Roadmap
 
-Distributed under the MIT License. See `LICENSE` for more information.
+- 🎮 **Social RPG**: Parties, guilds, co-op boss battles, leaderboards, & shared challenges.
+- 🤖 **Advanced AI**: Adaptive difficulty, dynamic quest generation, and personal AI coaching.
+- 📱 **Platform Expansion**: Mobile app (iOS/Android), desktop notifications, & calendar integrations.
+- 🌎 **Expanded World**: Additional map regions, character classes, equipment, and seasonal events.
+
+---
+
+## 🎯 Vision
+
+HUSTLE is built around one core principle:  
+**Make progress visible, rewarding, and fun.**
+
+```text
+A TASK ──> 📜 QUEST  |  A HABIT ──> 🔥 STREAK  |  A GOAL ──> 🎯 MISSION
+A CHALLENGE ──> 🐉 BOSS  |  PROGRESS ──> ⚡ XP  |  GROWTH ──> 🏆 LEVEL UP
+```
+
+> **Don't just manage your life. Play it.**
+
+---
+
+## 🤝 Contributing & License
+
+Contributions, ideas, issues, and feature requests are welcome!  
+Feel free to open an issue or submit a pull request at **[github.com/drax-glitch/hustle](https://github.com/drax-glitch/hustle)**.
+
+Distributed under the **MIT License**. See [`LICENSE`](https://github.com/drax-glitch/hustle/blob/main/LICENSE) for more information.
+
+<div align="center">
+
+### ⚔️ LEVEL UP YOUR LIFE ⚔️
+*Your goals are the quests. Your consistency is your power. Your life is the game.*
+
+🚀 **[PLAY HUSTLE](https://hustle-omega-green.vercel.app/)** • ⭐ **[STAR ON GITHUB](https://github.com/drax-glitch/hustle)**
+
+</div>
